@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { ActivatedRoute } from '@angular/router'
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'server-manager-front';
+
+  constructor(private location: Location){}
+  
+  ngOnInit(): void {
+    console.log(localStorage.getItem('token'))
+    if(localStorage.getItem('token') === null || localStorage.getItem('token') === undefined){
+      this.location.replaceState('/auth/login');
+    }
+  }
 }
