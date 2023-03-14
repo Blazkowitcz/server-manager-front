@@ -1,0 +1,8 @@
+.darcula{
+    background-color: rgba(40, 42, 54, 1) !important;
+    color: white;
+}
+
+.app-bar .app-bar-item:not(.no-hover) .active, .app-bar .app-bar-item:not(.no-hover):active, .app-bar .app-bar-item:not(.no-hover):hover, .app-bar .app-bar-menu li:not(.no-hover) .active, .app-bar .app-bar-menu li:not(.no-hover):active, .app-bar .app-bar-menu li:not(.no-hover):hover, .app-bar .brand:not(.no-hover) .active, .app-bar .brand:not(.no-hover):active, .app-bar .brand:not(.no-hover):hover, .app-bar .hamburger:not(.no-hover) .active, .app-bar .hamburger:not(.no-hover):active, .app-bar .hamburger:not(.no-hover):hover {
+    background-color: gray;
+}

@@ -6,19 +6,22 @@ import { NgMetro4Module } from 'ng-metro4';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AuthComponent } from './auth/auth.component';
+import { TorrentComponent } from './torrent/torrent.component';
+import { TorrentUtil } from './torrent/torrent.util';
 
 @NgModule({
   declarations: [
     AppComponent,
     AuthComponent,
+    TorrentComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgMetro4Module,
-    HttpClientModule
+    HttpClientModule,
   ],
-  providers: [],
+  providers: [TorrentUtil],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
