@@ -1,11 +1,12 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
+import config from '../../../config.json';
 
 @Injectable({
     providedIn: 'root'
 })
 export class AuthService {
-    private base_url = 'http://127.0.0.1:3000/auth';
+    private base_url = config.backend.protocole + '://' + config.backend.address + ':' + config.backend.port + '/auth';
     constructor(private http: HttpClient) { }
 
     /**

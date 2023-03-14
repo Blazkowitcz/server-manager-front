@@ -17,7 +17,7 @@ export class AuthComponent implements OnInit {
   password: String = "";
 
   ngOnInit(): void {
-    
+    alert(localStorage.getItem('token'));
   }
 
   /**
